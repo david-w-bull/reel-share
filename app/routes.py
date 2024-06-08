@@ -5,6 +5,7 @@ app = create_app()
 
 @app.route('/get', methods=['GET'])
 def get_endpoint():
+    print("Did this work?")
     return jsonify({"message": "This is a GET endpoint"})
 
 @app.route('/post', methods=['POST'])
